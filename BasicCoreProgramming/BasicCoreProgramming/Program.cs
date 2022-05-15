@@ -10,7 +10,6 @@ namespace BasicCoreProgramming
     {
         static void Main(string[] args)
         {
-            
             Console.WriteLine("***** Welcome to  Basic of C# Core Programming *****\n");
             Console.WriteLine("Q1. FlipCoin & to print Percentege of Heads & Tails");
             Console.WriteLine("Q2. To print Leap Year or Not a Leap Year");
@@ -21,8 +20,10 @@ namespace BasicCoreProgramming
             Console.WriteLine("Q7. Swap Two Number");
             Console.WriteLine("Q8 TO Check Number  Even or Odd ");
             Console.WriteLine("Q9. To Check Alphabet is Vowels or Consonant");
-            Console.Write("Enter The Choice of Question Number = ");
+            Console.WriteLine("Q10. Find The Largest Number Among Three Number");
+            Console.Write("\n->Enter The Choice of Question Number = ");
             int choice = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("\n");
             switch (choice)
             {
                 case 1:
@@ -64,6 +65,10 @@ namespace BasicCoreProgramming
                 case 9:
                     CheckAlphabet objalphabet = new CheckAlphabet();
                     objalphabet.CheckVowelConsonant();
+                    break;
+                case 10:
+                    LargestNumber objlargestno = new LargestNumber();
+                    objlargestno.CheckLargestNo();
                     break;
                 default:
                     Console.WriteLine("Please Enter Valid Number Of Question");
