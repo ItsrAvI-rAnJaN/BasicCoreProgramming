@@ -20,6 +20,7 @@ namespace BasicCoreProgramming
             Console.WriteLine("Q5. To Print The Prime Factorization of Number N");
             Console.WriteLine("Q6 To Compute Quotient and Remainder");
             Console.WriteLine("Q7. Swap Two Number");
+            Console.WriteLine("Q8 TO Check Number  Even or Odd ");
             int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
             {
@@ -54,6 +55,10 @@ namespace BasicCoreProgramming
                 case 7:
                     SwapTwoNum objswap =new SwapTwoNum();
                     objswap.SwapNumber();
+                    break;
+                case 8:
+                    EvenorOdd objEvenOdd = new EvenorOdd();
+                    objEvenOdd.CheckEvenorOdd();
                     break;
             }
 
