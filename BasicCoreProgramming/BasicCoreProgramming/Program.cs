@@ -17,6 +17,7 @@ namespace BasicCoreProgramming
             Console.WriteLine("Q1. FlipCoin & to print Percentege of Heads & Tails");
             Console.WriteLine("Q2. To print Leap Year or Not a Leap Year");
             Console.WriteLine("Q3. power of 2 upto power 31");
+            Console.WriteLine("Q4.To Print The Harmonic Number of Nth Value");
             int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
             {
@@ -35,6 +36,10 @@ namespace BasicCoreProgramming
                 case 3:
                     PowerOf2 objpowerof2 = new PowerOf2();
                     objpowerof2.TableOfPower2();
+                    break;
+                case 4:
+                    HarmonicNum objharmonic = new HarmonicNum();
+                    objharmonic.harmonicVal();
                     break;
             }
 
