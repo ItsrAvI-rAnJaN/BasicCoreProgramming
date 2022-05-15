@@ -12,7 +12,6 @@ namespace BasicCoreProgramming
         {
             
             Console.WriteLine("***** Welcome to  Basic of C# Core Programming *****\n");
-            Console.WriteLine("Enter The Choice of Question");
             Console.WriteLine("Q1. FlipCoin & to print Percentege of Heads & Tails");
             Console.WriteLine("Q2. To print Leap Year or Not a Leap Year");
             Console.WriteLine("Q3. power of 2 upto power 31");
@@ -21,6 +20,8 @@ namespace BasicCoreProgramming
             Console.WriteLine("Q6 To Compute Quotient and Remainder");
             Console.WriteLine("Q7. Swap Two Number");
             Console.WriteLine("Q8 TO Check Number  Even or Odd ");
+            Console.WriteLine("Q9. To Check Alphabet is Vowels or Consonant");
+            Console.Write("Enter The Choice of Question Number = ");
             int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
             {
@@ -59,6 +60,13 @@ namespace BasicCoreProgramming
                 case 8:
                     EvenorOdd objEvenOdd = new EvenorOdd();
                     objEvenOdd.CheckEvenorOdd();
+                    break;
+                case 9:
+                    CheckAlphabet objalphabet = new CheckAlphabet();
+                    objalphabet.CheckVowelConsonant();
+                    break;
+                default:
+                    Console.WriteLine("Please Enter Valid Number Of Question");
                     break;
             }
 
