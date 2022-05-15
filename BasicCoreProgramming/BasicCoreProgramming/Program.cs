@@ -18,6 +18,7 @@ namespace BasicCoreProgramming
             Console.WriteLine("Q2. To print Leap Year or Not a Leap Year");
             Console.WriteLine("Q3. power of 2 upto power 31");
             Console.WriteLine("Q4.To Print The Harmonic Number of Nth Value");
+            Console.WriteLine("Q5. To Print The Prime Factorization of Number N");
             int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
             {
@@ -40,6 +41,10 @@ namespace BasicCoreProgramming
                 case 4:
                     HarmonicNum objharmonic = new HarmonicNum();
                     objharmonic.harmonicVal();
+                    break;
+                case 5:
+                    Factors objfactors = new Factors();
+                    objfactors.PrimeFactorization();
                     break;
             }
 
