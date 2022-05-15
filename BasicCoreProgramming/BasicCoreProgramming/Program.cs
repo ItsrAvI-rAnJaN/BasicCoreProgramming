@@ -10,9 +10,8 @@ namespace BasicCoreProgramming
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to  Basic of C# Core Programming ");
-            Console.WriteLine("***** Welcome to  Basic of C# Core Programming *****");
-            Console.WriteLine("\n");
+            
+            Console.WriteLine("***** Welcome to  Basic of C# Core Programming *****\n");
             Console.WriteLine("Enter The Choice of Question");
             Console.WriteLine("Q1. FlipCoin & to print Percentege of Heads & Tails");
             Console.WriteLine("Q2. To print Leap Year or Not a Leap Year");
@@ -20,6 +19,7 @@ namespace BasicCoreProgramming
             Console.WriteLine("Q4.To Print The Harmonic Number of Nth Value");
             Console.WriteLine("Q5. To Print The Prime Factorization of Number N");
             Console.WriteLine("Q6 To Compute Quotient and Remainder");
+            Console.WriteLine("Q7. Swap Two Number");
             int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
             {
@@ -50,6 +50,10 @@ namespace BasicCoreProgramming
                 case 6:
                     QuotientRemainder objqutnRemdr = new QuotientRemainder();
                     objqutnRemdr.ComputQutnRemdr();
+                    break;
+                case 7:
+                    SwapTwoNum objswap =new SwapTwoNum();
+                    objswap.SwapNumber();
                     break;
             }
 
